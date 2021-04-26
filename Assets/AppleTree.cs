@@ -23,7 +23,15 @@ public class AppleTree : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // —брасывать €блоки паз в секунду        
+        // —брасывать €блоки паз в секунду
+        Invoke("DropApple", 2f);
+    }
+
+    void DropApple()
+    {
+        GameObject apple = Instantiate(applePrefab);
+        apple.transform.position = transform.position;
+        Invoke("DropApple", secondsBetweenAppleDrops);
     }
 
     // Update is called once per frame

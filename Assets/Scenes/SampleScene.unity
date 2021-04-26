@@ -350,6 +350,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4840695396544941339, guid: ed8d11c8ff5595b47841f12dc5806938, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6304901572639839622, guid: ed8d11c8ff5595b47841f12dc5806938, type: 3}
       propertyPath: m_Name
       value: AppleTree
@@ -358,6 +362,10 @@ PrefabInstance:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8994271833141767317, guid: ed8d11c8ff5595b47841f12dc5806938, type: 3}
+      propertyPath: applePrefab
+      value: 
+      objectReference: {fileID: 707184628958208407, guid: 8683073d67ffb554a917e33e5ce813eb, type: 3}
     - target: {fileID: 8994271833141767317, guid: ed8d11c8ff5595b47841f12dc5806938, type: 3}
       propertyPath: chanceToChangeDirections
       value: 0.02
