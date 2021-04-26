@@ -35,5 +35,13 @@ public class AppleTree : MonoBehaviour
         transform.position = pos;
 
         // Изменение направления
+        if (pos.x < -ledtAndRightEdge)
+        {
+            speed = Mathf.Abs(speed);
+        }
+        else if (pos.x > ledtAndRightEdge)
+        {
+            speed = -Mathf.Abs(speed);
+        }
     }
 }
