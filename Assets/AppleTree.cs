@@ -12,7 +12,7 @@ public class AppleTree : MonoBehaviour
     public float speed = 1f;
 
     // Расстояние, на котором должно измениться направление движения яблони
-    public float ledtAndRightEdge = 10f;
+    public float leftAndRightEdge = 10f;
 
     // Вероятность случайного изменения направления движения
     public float chanceToChangeDirections = 0.1f;
@@ -43,11 +43,11 @@ public class AppleTree : MonoBehaviour
         transform.position = pos;
 
         // Изменение направления
-        if (pos.x < -ledtAndRightEdge)
+        if (pos.x < -leftAndRightEdge)
         {
             speed = Mathf.Abs(speed);
         }
-        else if (pos.x > ledtAndRightEdge)
+        else if (pos.x > leftAndRightEdge)
         {
             speed = -Mathf.Abs(speed);
         }

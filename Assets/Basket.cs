@@ -27,4 +27,14 @@ public class Basket : MonoBehaviour
         pos.x = mousePos3D.x;
         transform.position = pos;
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        // ќтыскать €блоко, попавшее в эту корзину
+        GameObject collidedWidth = collision.gameObject;
+        if (collidedWidth.tag == "Apple")
+        {
+            Destroy(collidedWidth);
+        }
+    }
 }
