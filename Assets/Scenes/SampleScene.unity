@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 54c4ea0885da95f4ca1d7976c80e1874, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -316,6 +316,7 @@ MonoBehaviour:
   numBaskets: 3
   basketBottomY: -14
   basketSpacingY: 2
+  basketList: []
 --- !u!1 &964258169
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,6 +467,7 @@ GameObject:
   - component: {fileID: 1874604371}
   - component: {fileID: 1874604373}
   - component: {fileID: 1874604372}
+  - component: {fileID: 1874604374}
   m_Layer: 5
   m_Name: HighScore
   m_TagString: Untagged
@@ -534,6 +536,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874604370}
   m_CullTransparentMesh: 1
+--- !u!114 &1874604374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874604370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ce7ffd522c4954479439f76b8ffa8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1997652201
 GameObject:
   m_ObjectHideFlags: 0

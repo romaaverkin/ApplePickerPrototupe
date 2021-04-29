@@ -50,6 +50,12 @@ public class Basket : MonoBehaviour
             // Добавить очки за пойманное яблоко
             score += 100;
             scoreGT.text = score.ToString();
+
+            // Запомнить высшее достижение
+            if (score > HighScore.score)
+            {
+                HighScore.score = score;
+            }
         }
     }
 }

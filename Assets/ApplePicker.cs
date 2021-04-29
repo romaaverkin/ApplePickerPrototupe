@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ApplePicker : MonoBehaviour
 {
@@ -42,6 +43,12 @@ public class ApplePicker : MonoBehaviour
         // Исключить корзину из списка и удалить сам игровой объект
         basketList.RemoveAt(basketIndex);
         Destroy(tBasketGO);
+
+        // Если корзин не осталось, перезапустить игру
+        if (basketList.Count == 0)
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
     }
 
     // Update is called once per frame
